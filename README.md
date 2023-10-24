@@ -1,33 +1,33 @@
-#Bash Script: Audio File Conversion Script
+# Bash Script: Audio File Conversion Script
 This Bash script is designed to convert audio files in various formats to MP3. It removes spaces from filenames, ensuring compatibility with conversion and future use. It is particularly useful for batch processing multiple audio files.
 
-##System Requirements
+## System Requirements
 Before running this script, ensure the following prerequisites are met:
 
 macOS (macOS-specific installation instructions are provided)
 Homebrew for package management
 FFmpeg for audio file conversion
 
-#macOS Installation
+# macOS Installation
 If you are using macOS, make sure to set up the required tools by following these steps:
 
-##Install Xcode Command Line Tools:
+## Install Xcode Command Line Tools:
 
 xcode-select --install
 Install Homebrew:
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-#Verify Homebrew installation:
+# Verify Homebrew installation:
 brew -v
 
-#Update Homebrew:
+# Update Homebrew:
 brew update
 
-#Upgrade Homebrew packages:
+# Upgrade Homebrew packages:
 brew upgrade
 
-#Install FFmpeg:
+# Install FFmpeg:
 brew install ffmpeg
 
 Usage
@@ -38,7 +38,7 @@ output="/mnt/out/"
 processed="/mnt/processed/"
 Place your audio files in the input directory specified above.
 
-#Run the script using the Bash interpreter:
+# Run the script using the Bash interpreter:
 
 bash audio_conversion_script.sh
 
@@ -48,7 +48,7 @@ Converted MP3 files will be moved to the output directory, and the original file
 
 The script logs the start and end times of the conversion process in a time log file.
 
-Supported Audio Formats
+## Supported Audio Formats
 The script supports the following audio file formats for conversion to MP3:
 
 MXF
@@ -59,7 +59,7 @@ WAV
 AIFF
 MPEG
 
-#Notes
+# Notes
 The script removes spaces from filenames and replaces them with underscores to ensure compatibility.
 Special characters in filenames are also replaced with underscores.
 The script is set up for macOS; you may need to adapt it for other operating systems.
